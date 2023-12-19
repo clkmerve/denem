@@ -1,0 +1,72 @@
+.Home{
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+
+    
+
+    .sectionText{
+        position: absolute;
+        height: 100%;
+        top: 30%;
+        bottom: 50%;
+        color: white;
+        padding: 0 1.3rem;
+        
+        
+
+  
+        h1{
+            font-size: 2rem;
+            font-weight: 900;
+
+        }
+        p{
+            padding: 1rem 0;
+            font-size: 0.938rem;
+            font-weight: 500;
+        }
+        .btn{
+            gap: .5rem ;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 1rem;
+        }
+
+
+    }
+
+
+}
+
+
+  .homeImg{
+        position: absolute;
+        height: 10vh;
+        width: auto;
+        object-fit: cover;
+    }
+ 
+
+@media screen and (min-width:480px){
+
+    .Home{
+        .sectionText{
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            h1{
+                font-size:2.5rem ;
+                font-weight: 900;
+            }
+            p{
+                padding: 1rem 0;
+                font-size: 1rem;
+                max-width: 70%;
+                margin: auto;
+            }
+        }
+    }
+}

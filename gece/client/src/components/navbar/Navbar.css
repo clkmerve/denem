@@ -1,0 +1,150 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    border-bottom: 1.5px 
+    solid rgba(164, 104, 62, 0.731);
+    backdrop-filter: blur (5px);
+    z-index: 1000;
+
+.logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logoImage {
+    width: 100px; 
+    height: auto;
+    margin-right: 10px;
+    border-radius: 1000px;
+}
+}
+
+
+@media screen and (max-width:768px) {
+    .menu{
+        position: absolute;
+        width: 70%;      
+        top:-100rem;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        background: rgba(255, 255, 255,0.94);
+        padding: 2rem;
+        border-radius: 10px;
+        transition: .8s ease-in-out;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 3px 4px rgba( 179, 179, 117, 0.188);
+
+        li{
+            font-size:20px;
+            font-weight: 500;
+            padding: 1rem 0;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                color: rgba(139, 111, 19, 0.692);
+                border-bottom:0 solid rgb(206, 170, 206);
+                
+
+            }
+        }
+    
+    }
+}
+
+.menuIcon , .closeIcon{
+font-size:40px ;
+color: rgb(211, 194, 60);
+&:hover{
+    color: rgba(139, 111, 19, 0.692);
+}
+}
+.closeIcon{
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%);
+
+}
+.showNavbar{
+    top: 8rem ;
+}
+
+
+.button{
+    color: rgb(211, 194, 60);
+    font-size: 30px;
+}
+
+}
+
+@media screen and (min-width:768px){
+    .navBar{
+       .closeIcon, .menuIcon{
+            display:none ;
+
+        }
+        .menu{
+            ul{
+                display: flex;
+                gap: 1rem;
+                li{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding: 1rem 0;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: rgb(231, 231, 110);
+                        border-bottom: 1.5px solid rgb(231, 231, 110);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .navBar{
+        padding: 2rem 6rem;
+        .menu{
+            ul{
+                gap: 4rem;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .navBar{
+        padding: 2rem 14rem;
+    }
+}
+
+/*
+:root{
+primaryColor:hsl(14,-90%,53%);
+primaryColorLight:hsl(14,96,91)
+bgcolor:hsl 0 0% 100%
+formcolor:hsl(20 42 87
+whiteColor:hsl 
+
+biggestfontsize:2.5rem
+h1 2rem
+h2 1.25
+h3 1rem
+normal 0.938rem
+small 0.813rem
+smallest 0.75rem
+boreder 3rem
+}
+*/
